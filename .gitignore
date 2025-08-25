@@ -1,0 +1,12 @@
+# Node / Bun dependencies
+node_modules/
+
+# Build outputs
+dist/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,30 @@
+{
+  "name": "defuddle-cli",
+  "version": "1.0.0",
+  "description": "CLI tool to extract main content from web pages using defuddle",
+  "scripts": {
+    "build": "bun build defuddle-cli.ts --outdir ./dist --target bun",
+    "build-exe": "bun build --compile --minify defuddle-cli.ts --outfile ./dist/defuddle-cli",
+    "clean": "bun rm ./dist",
+    "link": "bun link",
+    "start": "bun run ./dist/defuddle-cli.js"
+  },
+  "bin": {
+    "defuddle-cli": "./dist/defuddle-cli.js"
+  },
+  "dependencies": {
+    "defuddle": "^0.6.0",
+    "jsdom": "^24.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.20",
+    "@types/jsdom": "^21.1.7"
+  },
+  "keywords": [
+    "cli",
+    "web-scraping",
+    "content-extraction",
+    "defuddle"
+  ],
+  "author": "Wichai Termwuttipreecha"
+}
